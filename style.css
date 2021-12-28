@@ -36,3 +36,11 @@ figcaption{
 p{
     font-size: 16.5px;
 }
+
+footer p{
+    display: inline-block;
+}
+
+footer img{
+    display: inline-block;
+}
