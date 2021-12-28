@@ -4,15 +4,27 @@ body{
     color: white;
     line-height: 1.5em;
 }
+
+header h1{
+    display: inline-block;
+}
+
+.pepe{
+    width: 30px;
+    display: inline-block;
+}
+
 section{
     max-width: 800px;
     margin: auto;
     justify-content: center;
+    align-items: center;
 }
 
-img{
+section img{
     max-width: 90%;
     margin: auto;
+    margin-top:20px;
     display: block;
 }
 

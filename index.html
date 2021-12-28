@@ -9,11 +9,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
 
+<script>
+    document.getElementById('sound').play();
+</script>
+
     <title>Vizualizace zvuku</title>
 </head>
 <body>
     <header>
         <h1>Vizualizace Zvuku</h1>
+        <img class="pepe" src="images/pepe.png">
     </header>
     <main>
         <section>
@@ -33,7 +38,7 @@
                 Každé měření je uloženo nejčastěji jako 16bitové číslo. Tento proces je znázorněn na obrázku níže. 
             </p>
             <figure>
-                <img src="images/obr1.png">
+                <img src="images/obr1.png" alt="">
                 <figcaption>Zdroj: Franz Ferdinand 2005</figcaption>
             </figure>
             <p>
@@ -57,7 +62,112 @@
                 kanalu stejné. Připravil jsem si zde osm nejikoničtějších zvuků a zvukových efektů z dob Hollywoodského rozkvětu
                 až po dnešní éru memů.
             </p>
+            <h3 id="wilhelm">Wilhelm scream</h3>
+            <audio src="sounds/wilhelm_scream.m4a" id="myAudio1"></audio>
+                <button id="myBtn1">Play Audio</button>
+            <p>
+                Wilhelm scream je jeden z nejznámějších a nejstarších zvukových efektů. Poprvé
+                byl použit ve filmu Vzdálený zvuk bubnů, kdy při přechodu bažinou je jeden z vojáků
+                stáhnut aligátorem pod vodu.
+            </p>
+            <img src="images/wilhelm_scream.png" alt="">
+
+            <h3 id="reverse">Reverse tape</h3>
+            <audio src="sounds/reverse.m4a" id="myAudio2"></audio>
+                <button id="myBtn2">Play Audio</button>
+            <p>
+                Tento zvukový efekt je velmi známy a používány například při vracení záběru ve filmech, či seriálech.
+                Tohoto efektu lze dosáhnout změnou směru otáčení motoru u gramofonu, nebo obrácením motorů
+                kazeťáků.
+            </p>
+            <img src="images/reverse_tape.png" alt="">
+            <h3 id="crickets">Crickets (awkward silence)</h3>
+            <audio src="sounds/reverse.m4a" id="myAudio3"></audio>
+                <button id="myBtn3">Play Audio</button>
+            <p>
+                Tento zvukový efekt je používán především v animovaných filmech a je
+                asociovaný s trapným tichem. Přepokládá se, že se uchytil ve formátu <a href="Vaudeville">Vaudeville</a>.
+            </p>
+            <img src="images/crickets.png" alt="">
+            <h3 id="inception">Inception</h3>
+            <audio src="sounds/inception.m4a" id="myAudio4"></audio>
+            <button id="myBtn4">Play Audio</button>
+            <p>
+                Zvukový efekt z velmi úspěšného filmu Počátek, který má navodit
+                vážnost. Od vydání filmu Počátek (2010) nabyl obrovské popularity.
+            </p>
+            <img src="images/inception.png" alt="">
+            <h3 id="hawk">Hawk screech</h3>
+            <audio src="sounds/hawk_skreech.m4a" id="myAudio5"></audio>
+            <button id="myBtn5">Play Audio</button>
+            <p>
+                Zvuk jestřába je jedním z nejvíce "overused" zvukových efektů, co se kinematografie týče.
+            </p>
+            <img src="images/hawk_screach.png" alt="">
+            <h3 id="mario">Mario kart race start</h3>
+            <audio src="sounds/mario_kart.m4a" id="myAudio6"></audio>
+            <button id="myBtn6">Play Audio</button>
+            <p>
+                A máme zde další ikonu. Jedná se o zvukový efekt, se kterým přišla hra Mario Kart.
+            </p>
+            <img src="images/mario_kart.png" alt="">
+            <h3 id="door">Creacking door</h3>
+            <audio src="sounds/creacking_door.m4a" id="myAudio7"></audio>
+            <button id="myBtn7">Play Audio</button>
+            <p>
+                Vrzající dveře se řadí mezi jeden z výchozích zvukových efektů v kinematografii.
+                Používá se především pro navození srašidelné atmosféry (například v hororech).
+            </p>
+            <img src="images/creacking_door.png" alt="">
+            <h3 id="noice">Noice</h3>
+            <audio src="sounds/noice.m4a" id="myAudio8"></audio>
+            <button id="myBtn8">Play Audio</button>
+            <p>
+                Tento světoznámý zvukový efekt vznikl ve videu pro děti od Michaela Wayna Rosena.
+            </p>
+            <img src="images/noice.png" alt="">
         </section>
+
+        <script>  document.getElementById("myBtn1").addEventListener("click",function(){
+            document.getElementById("myAudio1").play();
+            }
+            );
+        </script>
+        <script>  document.getElementById("myBtn2").addEventListener("click",function(){
+            document.getElementById("myAudio2").play();
+            }
+            );
+        </script>
+        <script>  document.getElementById("myBtn3").addEventListener("click",function(){
+            document.getElementById("myAudio3").play();
+            }
+            );
+        </script>
+        <script>  document.getElementById("myBtn4").addEventListener("click",function(){
+            document.getElementById("myAudio4").play();
+            }
+            );
+        </script>
+        <script>  document.getElementById("myBtn5").addEventListener("click",function(){
+            document.getElementById("myAudio5").play();
+            }
+            );
+        </script>
+        <script>  document.getElementById("myBtn6").addEventListener("click",function(){
+            document.getElementById("myAudio6").play();
+            }
+            );
+        </script>
+        <script>  document.getElementById("myBtn7").addEventListener("click",function(){
+            document.getElementById("myAudio7").play();
+            }
+            );
+        </script>
+        <script>  document.getElementById("myBtn8").addEventListener("click",function(){
+            document.getElementById("myAudio8").play();
+            }
+            );
+        </script>
     </main>
 </body>
 </html>
