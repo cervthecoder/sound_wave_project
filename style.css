@@ -1,0 +1,26 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.5em;
+}
+section{
+    max-width: 800px;
+    margin: auto;
+    justify-content: center;
+}
+
+img{
+    max-width: 90%;
+    margin: auto;
+    display: block;
+}
+
+figcaption{
+    text-align: center;
+    
+}
+
+p{
+    font-size: 16.5px;
+}

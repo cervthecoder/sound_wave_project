@@ -2,7 +2,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import wave, sys
 
-def read_wave(path: str):
+plt.rcParams['axes.facecolor'] = 'black'
+
+def visualize(path: str):
 
     # reads the audiofile
     raw = wave.open(path)
@@ -13,7 +15,7 @@ def read_wave(path: str):
     signal = np.frombuffer(signal, dtype ="int16")
     
     # get the framerate
-    f_rate = raw.get_framerate()
+    f_rate = raw.getframerate()
 
     # Divide the framerate by size of the signal to get time (x-axis)
     time = np.linspace(
@@ -23,7 +25,6 @@ def read_wave(path: str):
             )
     # Use matplolib to graph our signal
     plt.figure(1)
-    plt.patch.set_facecolor('black')
     plt.plot(time, signal, color="white")
     path = path.replace(".wav", "")
     plt.savefig(path+'.png')

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+    <title>Vizualizace zvuku</title>
+</head>
+<body>
+    <header>
+        <h1>Vizualizace Zvuku</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Počítače a zvuk</h2>
+            <p>
+                Zvuk je složitý fenomén popisovaný jako pohyb částic média (vzduch, voda).
+                Pro člověka začíná zvuk v ušním boltci, který ho zachytí a převede do zvukovodu,
+                na jehož konci je bubínek, který slouží jako rezonátor. Bubínek rozpohybuje systém 
+                kůstek (kladívko, kovadlinka, třmínek), ty "signál" přenáší do hlemýždě, kde jej zachytí
+                vláskové buňky.
+            </p>
+            <p>
+                Počítače zvuk nepříjímají uchem, ale používají k tomu instrument, který je inpirován lidským uchem
+                a tím je mikrofon. Mikrofon převádí změny akustického tlaku v elektrický potenciál, který svou amplitudou
+                odpovídá intensitě akustického tlaku. Počítač pak elektrický potenciál (signál) zpracuje pomocí metody sampling.
+                To znamená, že měří intensitu signálu v pravidelných intervalech (nejčastějším intervalem je 44100krát za sekundu).
+                Každé měření je uloženo nejčastěji jako 16bitové číslo. Tento proces je znázorněn na obrázku níže. 
+            </p>
+            <figure>
+                <img src="images/obr1.png">
+                <figcaption>Zdroj: Franz Ferdinand 2005</figcaption>
+            </figure>
+            <p>
+                Obraceným procesem k přijímaní a zpracování zvuku je samotné vytvýření zvuku.
+                Člověk k vytváření zvuků (mluvení, zpívání, křičení) využívá hlasivky uložené v hrtanu
+                a ústní dutinu.
+            </p>
+            <p>
+                U počítačů se dá tvorba zvuku analogicky přirovnat k obrácení funkce mikrofonu, čímž
+                vzniká reproduktor. Jednotlivé hodnoty získané samplingem se přetvoří k signál, který jako
+                elektrický potenciál putuje k membráně, která rozpohybuje částice vzduchu.
+            </p>
+        </section>
+        <section>
+            <h2>Zvuky a efekty</h2>
+            <p>
+                Zvuk se dá stejně jako například funkce znázornit je graficky. Jde v podstatě
+                pouze o znázornění množiny hodnot získaných samplingem (intenzity akustického tlaku)
+                do času. Diagram je dvoustraný, protože se zvuk získává ze dvou kanalů (pravého a levého).
+                Všechny diagramy zde budou osově souměrné podle osy času, protože jsou výstupy z právého i levého
+                kanalu stejné. Připravil jsem si zde osm nejikoničtějších zvuků a zvukových efektů z dob Hollywoodského rozkvětu
+                až po dnešní éru memů.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
