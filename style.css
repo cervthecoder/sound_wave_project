@@ -39,8 +39,10 @@ p{
 
 footer p{
     display: inline-block;
+    font-size: 13px;
 }
 
 footer img{
     display: inline-block;
+    height: 18px;
 }
