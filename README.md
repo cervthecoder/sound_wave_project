@@ -11,3 +11,5 @@ soubor
 který slouží jako zdroj pro pro [stránku](https://cervthecoder.github.io/sound_wave_project/) celého projektu.
 Dalším důležitým souborem je [links.txt](https://github.com/cervthecoder/sound_wave_project/blob/main/links.txt),
 kde jsou uloženy jednotlivé zdroje pro použité zvukové efekty.
+
+&copy 2021 Matěj Červenka
